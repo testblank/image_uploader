@@ -1,0 +1,77 @@
+.purge_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+
+  .btn_wrap {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+
+    .purge_btn {
+      width: 173px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #646464;
+      cursor: pointer;
+    }
+  }
+
+  .input_wrap {
+    width: 100%;
+    display: flex;
+
+    .add_btn {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 20px;
+      color: white;
+      background: #646464;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    > input {
+      flex: 1 1 auto;
+      background: #646464;
+      border: none;
+      width: 400px;
+      border: none;
+      border-radius: 20px;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      height: 1.5rem;
+      color: white;
+      font-style: italic;
+      &::placeholder {
+        color: white;
+        filter: brightness(0.7);
+      }
+    }
+  }
+  .preview_url {
+    margin-top: 10px;
+    width: 100%;
+    color: #646464;
+    > a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: white;
+
+      &:link {
+        color: rgba($color: #646464, $alpha: 1.5);
+      }
+    }
+  }
+}

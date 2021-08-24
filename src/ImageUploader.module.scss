@@ -1,0 +1,288 @@
+.wrap {
+  padding: 2rem;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // font-weight: 900;
+
+  &.blur {
+    filter: blur(6px);
+    -webkit-filter: blur(6px); 
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+  }
+
+  .version {
+    color: #6f7277;
+    margin-bottom: 50px;
+    // font-weight: 900;
+    // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  }
+}
+.header {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  // border-bottom: 5px dotted #b2ceb2;
+  margin-bottom: 2rem;
+  // border: 1px solid #2b2b2b;
+  padding: 0 1rem;
+
+  .column_btn {
+    user-select: none;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-weight: 900;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    color: #6f7277;
+    cursor: pointer;
+    box-shadow: -10px -10px 15px #30343a, 10px 10px 15px #24262b;
+    border-radius: 15px;
+
+    &.checked {
+      color: white;
+      text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 10px #fff;
+      transition: all 0.7s ease-out;
+    }
+
+    &.mouse_down {
+      background: #2a2d32;
+      box-shadow: inset -10px -10px 15px #30343a, inset 10px 10px 15px #24262b;
+      border-radius: 15px;
+    }
+  }
+}
+
+.dragWrap {
+  margin-top: 10px;
+  width: 600px;
+
+  .paragragh {
+    width: 100%;
+    color: #646464;
+    // filter: brightness(1.5);
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .inputWrap {
+    display: flex;
+    transition: all ease-in-out 0.3s;
+
+    &.blink {
+      opacity: 0.3;
+    }
+
+    .text {
+      color: #646464;
+      filter: brightness(1.5);
+      font-size: 1.2rem;
+    }
+
+    .path_input {
+      background: #646464;
+      border: none;
+      width: 100%;
+      border: none;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      // box-shadow: 0px 3px 5px 0px #646464;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      height: 1.5rem;
+      color: white;
+      font-style: italic;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: white;
+        filter: brightness(0.7);
+      }
+    }
+    .addBtn {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      width: 100px;
+      height: 1.5rem;
+      background: rgba($color: #646464, $alpha: 0.7);
+      color: white;
+      height: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+
+      &:hover {
+        background: #383838;
+      }
+    }
+  }
+}
+
+.delBtn {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  // background: #646464;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// .delBtn {
+//   margin-left: 0.5rem;
+//   cursor: pointer;
+//   color: red;
+// }
+
+.dragZone {
+  // border-radius: 20px;
+  background: #2a2d32;
+  margin: 20px 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: -10px -10px 15px #30343a, 10px 10px 15px #24262b;
+  // box-shadow: 0px 3px 5px 0px #bdebbd;
+}
+
+.btnZone {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background: #646464;
+  // height: 2rem;
+  // color: white;
+}
+
+.fileName {
+  display: flex;
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 28px;
+  line-height: 28px;
+  color: #646464;
+  filter: brightness(1.5);
+}
+
+.divider {
+  margin-top: 2rem;
+  height: 5rem;
+  border-top: 5px dotted #b2ceb2;
+  display: flex;
+  color: #b2ceb2;
+  font-size: 2rem;
+}
+
+.listbox {
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.ol {
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  word-break: break-all;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+
+  > a {
+    text-decoration: none;
+    color: #526652;
+    color: #646464;
+    filter: brightness(1.5);
+
+    &:hover {
+      color: #8dcc8d;
+    }
+  }
+}
+
+.popup_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgba($color: black, $alpha: 0.3);
+
+  .popup_main {
+    position: relative;
+    border: 1px solid gray;
+    width: 800px;
+    padding: 20px;
+    color: gray;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+
+    .popup_close {
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    > ul {
+      width: 100%;
+      list-style: none;
+
+      > li {
+        width: 100%;
+        height: 48px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      > li::before {
+        content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: gray; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        font-size: 2rem;
+        width: 2rem; /* Also needed for space (tweak if needed) */
+        margin-left: -2rem; /* Also needed for space (tweak if needed) */
+      }
+    }
+  }
+}

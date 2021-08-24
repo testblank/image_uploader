@@ -1,0 +1,72 @@
+.list {
+  width: 100%;
+  border: 1px solid #444;
+  color: white;
+
+  .input_wrap {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #242323;
+    z-index: 1000;
+  }
+
+  .header {
+    width: calc(900px - 4rem);
+    display: flex;
+    position: sticky;
+    top: 50px;
+    background: #242323;
+    z-index: 1000;
+
+    :first-child {
+      width: 350px;
+      padding: 10px;
+    }
+
+    > div {
+      width: calc(100% / 3);
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #444;
+    }
+  }
+
+  .imgs {
+    display: flex;
+
+    .value {
+      width: 350px;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #444;
+      word-break: break-all;
+      padding: 10px;
+    }
+
+    .img {
+      border: 1px solid #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: calc(100% / 3);
+      > a {
+        width: 200px;
+        word-break: break-all;
+      }
+      > img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+      }
+    }
+  }
+}

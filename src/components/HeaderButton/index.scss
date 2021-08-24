@@ -1,0 +1,27 @@
+.column_btn {
+  user-select: none;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // font-weight: 900;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: #6f7277;
+  cursor: pointer;
+  box-shadow: -10px -10px 15px #30343a, 10px 10px 15px #24262b;
+  border-radius: 15px;
+
+  &.checked {
+    color: white;
+    text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 10px #fff;
+    transition: all 0.7s ease-out;
+  }
+
+  &.mouse_down {
+    background: #2a2d32;
+    box-shadow: inset -10px -10px 15px #30343a, inset 10px 10px 15px #24262b;
+    border-radius: 15px;
+  }
+}

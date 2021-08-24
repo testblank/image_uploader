@@ -1,0 +1,95 @@
+{
+  "VipTableXlsTblAsset.json": {
+    "frame": {
+      "path": "vip",
+      "format": "png",
+      "value": []
+    }
+  },
+  "ShopTableXlsTblAsset.json": {
+    "icon": {
+      "path": "store",
+      "format": "png",
+      "value": []
+    }
+  },
+  "ChallengeTableXlsTblAsset.json": {
+    "challenge_banner_icon": {
+      "path": "challenge_cover",
+      "format": "jpg",
+      "value": []
+    },
+    "challenge_detail_icon": {
+      "path": "challenge_cover",
+      "format": "jpg",
+      "value": []
+    }
+  },
+  "PartsItemTableXlsTblAsset.json": {
+    "icon": {
+      "path": "partsitem/icon",
+      "format": "png",
+      "value": []
+    },
+    "info_resource": {
+      "path": "partsitem",
+      "format": "png",
+      "value": []
+    }
+  },
+  "ChallengeScoreTableXlsTblAsset.json": {
+    "reward_gold_img": {
+      "path": "challenge_reward",
+      "format": "png",
+      "value": []
+    },
+    "reward_dia_img": {
+      "path": "challenge_reward",
+      "format": "png",
+      "value": []
+    },
+    "class_img": {
+      "path": "challenge_icon",
+      "format": "png",
+      "value": []
+    }
+  },
+  "ContentsGuideTableXlsTblAsset.json": {
+    "guide_img": {
+      "path": "menuguide",
+      "format": "jpg",
+      "value": []
+    }
+  },
+  "ChallengeStudioBackgroundTableXlsTblAsset.json": {
+    "studio_bg_icon": {
+      "path": "challenge_background/icon",
+      "format": "jpg",
+      "value": []
+    },
+    "studio_bg_img": {
+      "path": "challenge_background",
+      "format": "jpg",
+      "value": []
+    }
+  },
+  "RandomBoxTableXlsTblAsset.json": {
+    "banner_icon": {
+      "path": "randomcard_pack",
+      "format": "png",
+      "value": []
+    }
+  },
+  "AdaRunwayTableXlsTblAsset.json": {
+    "detail_bg": {
+      "path": "runway_challenge/background_img/",
+      "format": "jpg",
+      "value": []
+    },
+    "icon": {
+      "path": "runway_challenge/background_img/",
+      "format": "jpg",
+      "value": []
+    }
+  }
+}
