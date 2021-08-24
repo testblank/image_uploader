@@ -193,9 +193,6 @@ export const uploadApi = async (fileObj: { biz_type: number, content_type: strin
 }
 
 export const purgeApi = async (fileList: string[] ) => {
-  // ? http://wiki.intra.sina-shangke.com/pages/viewpage.action?pageId=7078700
-  // ? https://sinastorage.com/statics.ada.sina.com.cn/resource
-
   if (!fileList.length) {
     return;
   }

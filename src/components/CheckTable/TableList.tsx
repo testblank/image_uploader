@@ -122,8 +122,8 @@ export default class TableList extends React.Component<IProps, IState> {
 
   private listRender = () => {
     const { tableName, droppedTableInfo, currentLang, currentKey, currentMultiple } = this.state;
-    const nasUrl = 'https://fashionintech.synology.me/share/dev_kor/webresource/UIResource/';
-    const sinaUrl = 'https://sinastorage.com/statics.ada.sina.com.cn/resource/UIResource/';
+    const nasUrl = 'exampleNas';
+    const sinaUrl = 'exampleSina';
     const noImage = NoImage;
     // const noImage = 'https://cdn4.iconfinder.com/data/icons/ui-beast-4/32/Ui-12-512.png';
 

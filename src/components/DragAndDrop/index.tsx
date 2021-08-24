@@ -169,11 +169,6 @@ export default class DragAndDrop extends React.Component<IProps, IState> {
     }
 
     this.setState({ valueArray })
-
-    // !sina cloud
-    // !https://sinastorage.com/statics.ada.sina.com.cn/resource/${path}/${filename}.png(.jpg.jpeg)
-    // !https://fashionintech.synology.me/share/dev_kor/webresource/${path}/${filename}.png(.jpg.jpeg)
-    // !
   }
 
   private handleInput = (e: any) => {
@@ -182,8 +177,8 @@ export default class DragAndDrop extends React.Component<IProps, IState> {
   }
   private listRender = () => {
     const { server, valueArray, path, format } = this.state;
-    const sinaUrl = 'https://sinastorage.com/statics.ada.sina.com.cn/resource/';
-    const nasUrl = 'https://fashionintech.synology.me/share/dev_kor/webresource/';
+    const sinaUrl = 'exampleSina';
+    const nasUrl = 'exampleNas';
     let src: string;
     const noImage = NoImage;
     // const noImage = 'https://cdn4.iconfinder.com/data/icons/ui-beast-4/32/Ui-12-512.png';
@@ -280,8 +275,6 @@ export default class DragAndDrop extends React.Component<IProps, IState> {
               </span>
             </div>
             <br />
-            <div>{'sinaUrl: https://sinastorage.com/statics.ada.sina.com.cn/resource/'}<span style={{ color: 'yellow' }}>{'{path}'}</span><span>/</span><span style={{ color: 'yellow' }}>{'{filename}'}</span></div>
-            <div>{'nasUrl : https://fashionintech.synology.me/share/dev_kor/webresource/'}<span style={{ color: 'yellow' }}>{'{path}'}</span><span>/</span><span style={{ color: 'yellow' }}>{'{filename}'}</span></div>
           </div>
           <div style={{
             display: 'flex',

@@ -62,7 +62,7 @@ class ImageUploader extends React.Component<IProps, IState> {
   private purge = React.createRef<HTMLDivElement>();
   private autocheck = React.createRef<HTMLDivElement>();
   private check = React.createRef<HTMLDivElement>();
-  private purgeUrl: string = 'https://sinastorage.com/statics.ada.sina.com.cn/resource';
+  private purgeUrl: string = 'example';
   private errorList: string[] = [];
   private errorRes: { error: boolean, msg: string, res: number } = { error: false, msg: '', res: 0 };
 
@@ -456,7 +456,7 @@ class ImageUploader extends React.Component<IProps, IState> {
     let file: File;
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://fashionintech.synology.me/share/dev_kor/webresource/UIResource/Lookbook/Lookbook_Look_Img/look_img_11000002_4.jpg');
+    xhr.open('GET', 'exampleSina');
     xhr.responseType = 'blob';
 
     xhr.onload = async () => {
@@ -471,7 +471,6 @@ class ImageUploader extends React.Component<IProps, IState> {
           await newNav.share({
             title: 'test image share',
             files: file,
-            // url: 'https://fashionintech.synology.me/share/dev_kor/webresource/UIResource/Lookbook/Lookbook_Look_Img/look_img_11000002_4.jpg'
           });
           console.log('success');
         }

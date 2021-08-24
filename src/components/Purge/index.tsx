@@ -75,9 +75,9 @@ export default class Purge extends React.Component<IProps, IState> {
                 <a
                   style={{ color: 'white' }}
                   target={'_blank'}
-                  href={`${purgeUrl}/${imgPurgeUrlList[index]}`}
+                  // href={`${purgeUrl}/${imgPurgeUrlList[index]}`}
                 >
-                  {purgeUrl}/{imgPurgeUrlList[index]}
+                  {/* {purgeUrl}/{imgPurgeUrlList[index]} */}
                 </a>
               </div>
             </div>
